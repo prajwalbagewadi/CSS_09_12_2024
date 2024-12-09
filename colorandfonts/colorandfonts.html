@@ -4,8 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css Basics</title>
+    <!--internal css-->
+    <style>
+      /*second prority*/
+      /*
+      id selector
+      */
+      /*
+      #p1,
+      #p2 {
+        color: #fc4502;
+        font-family: Sacramento;
+        font-size: 25px;
+      }
+      
+      #p1 {
+        color: #fc4502;
+        font-family: Sacramento;
+        font-size: 25px;
+      }
+      #p2 {
+        color: rgb(34, 5, 252);
+        font-family: Ink Free;
+        font-size: 25px;
+      }
+      /*
+      class selector
+      */
+      /*
+      .para1,
+      .para2 {
+        background-image: url(./peakpx.jpg);
+        color: white;
+        font-size: 100px;
+      }
+      */
+      /*
+      tag selector
+      */
+      /*
+      h6 {
+        background-color: black;
+        color: hsl(125, 98%, 50%);
+        font-family: Sacramento;
+        font-size: 25px;
+      }
+      */
+    </style>
+    <!--external css-->
+    <link rel="stylesheet" href="./prajwal.css" />
   </head>
   <body>
+    <!--inline css-->
     <h1 style="background-color: darkorchid; color: aliceblue">
       Lorem ipsum dolor sit amet consectetur.
     </h1>
@@ -30,7 +80,7 @@
       Lorem, ipsum dolor.
     </h2>
 
-    <p>
+    <p id="p1">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, deserunt
       dolor? Omnis blanditiis nulla enim aperiam minus veniam nesciunt dolorum
       amet voluptatum ex debitis doloribus quasi magnam, vel placeat nam
@@ -45,5 +95,45 @@
       quibusdam sunt, impedit repudiandae, magni laboriosam tenetur odio
       repellat eaque dignissimos voluptatem sint ullam odit laudantium ad earum?
     </p>
+    <p id="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, deserunt
+      dolor? Omnis blanditiis nulla enim aperiam minus veniam nesciunt dolorum
+      amet voluptatum ex debitis doloribus quasi magnam, vel placeat nam
+      deleniti numquam assumenda consequatur ut? Accusamus animi quod reiciendis
+      quibusdam, quas consectetur libero consequuntur, eaque deserunt inventore
+      vero facere minima fugit quis suscipit similique veniam! Aliquam nam odio
+      porro corporis omnis laboriosam animi officia, voluptatibus magni
+      accusantium iste consectetur! Voluptatum illo qui temporibus praesentium
+      autem molestias nostrum minus, eligendi incidunt ipsum quisquam id
+      expedita itaque alias cumque nulla maxime eos similique officiis ratione
+      excepturi vitae repellat nihil. Pariatur ex sapiente ratione consectetur
+      quibusdam sunt, impedit repudiandae, magni laboriosam tenetur odio
+      repellat eaque dignissimos voluptatem sint ullam odit laudantium ad earum?
+    </p>
+    <p class="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis,
+      ipsa impedit optio esse eaque vitae sit, tempore delectus ea repudiandae
+      hic omnis maiores amet perferendis eius eos, quis modi ut totam id.
+      Aliquam, accusamus fugit fuga consequuntur dolorum fugiat minima, ea
+      voluptatibus id molestias corrupti tempore placeat impedit accusantium.
+    </p>
+    <p class="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis,
+      ipsa impedit optio esse eaque vitae sit, tempore delectus ea repudiandae
+      hic omnis maiores amet perferendis eius eos, quis modi ut totam id.
+      Aliquam, accusamus fugit fuga consequuntur dolorum fugiat minima, ea
+      voluptatibus id molestias corrupti tempore placeat impedit accusantium.
+    </p>
+    <h6>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+      voluptatum consequatur animi doloribus aliquid dolores aliquam quaerat
+      enim vitae rerum?
+    </h6>
+    <h6 style="color: #fc4502">
+      <!--first prority-->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+      voluptatum consequatur animi doloribus aliquid dolores aliquam quaerat
+      enim vitae rerum?
+    </h6>
   </body>
 </html>
