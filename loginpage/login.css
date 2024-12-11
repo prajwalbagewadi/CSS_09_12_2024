@@ -33,6 +33,7 @@ input {
   border: 2px solid rgb(194, 188, 188);
   border-radius: 3px;
 }
+
 button {
   background-color: yellow;
   text-align: center;
@@ -48,8 +49,8 @@ button {
 input:focus,
 input:active {
   outline: none;
-  color: rgb(0, 255, 247); /* Change the border color to blue when focused */
-  border: 4px groove #03fbf2;
+  color: rgb(0, 0, 0); /* Change the border color to blue when focused */
+  border: 4px groove #ffcc00;
 }
 
 button:hover {
