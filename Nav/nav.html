@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bars</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+      .nav-container {
+        margin-bottom: 40px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      .nav1 {
+        background-color: #2d2d2d;
+        padding: 10px;
+      }
+      /*decedents*/
+      .nav1 ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex; /*arrange  elements from left to right*/
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav1 li {
+        display: inline;
+      }
+      .nav1 a {
+        text-decoration: none;
+        padding: 5px 15px;
+        color: #fff;
+        position: relative;
+      }
+      .nav1 a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      .nav1 a:hover::after {
+        transform: scaleX(1);
+      }
+      .nav1 .login-btn {
+        border: 3px solid #c0c0c0;
+        background-color: #2d2d2d;
+        padding: 5px 15px;
+        border-radius: 8px;
+        cursor: crosshair;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <h2>Varitation 1: horizontal with underline effect</h2>
+      <nav class="nav1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
